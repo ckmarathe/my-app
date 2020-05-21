@@ -9,8 +9,7 @@ pipeline {
         stage('Build artifact') {
             steps {
                 script{
-                    def mvnHome = tool name: 'maven', type: 'maven'
-                    sh "${$mvnHome}/bin/mvn clean package -DskipTests"
+                    sh "mvn clean package -DskipTests"
                 }
             }
         }
