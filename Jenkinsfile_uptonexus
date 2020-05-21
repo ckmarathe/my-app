@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM BUILD') {
             steps {
-                git credentialsId: 'github', url: 'https://github.com/ckmarathe/springboot-hw.git'
+                git credentialsId: 'github', url: 'https://github.com/ckmarathe/my-app.git'
             }
         }
         stage('Build artifact') {
