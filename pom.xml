@@ -29,6 +29,17 @@
 		</dependency>
 	
 	</dependencies>
+    	<distributionManagement>
+        	<snapshotRepository>
+            		<id>nexus</id>
+            		<url>http://172.42.42.112:8081/repository/springboot-hw/</url>
+         	</snapshotRepository>
+
+        	<repository>
+            		<id>nexus</id>
+            		<url>http://172.42.42.112:8081/repository/springboot-hw/</url>
+        	</repository>
+    	</distributionManagement>
 	
 <build>
     <plugins>
